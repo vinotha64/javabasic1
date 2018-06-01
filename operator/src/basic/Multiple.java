@@ -24,12 +24,29 @@ public double farenheit(double celsius) {
 	return farenheit;
 }
 		
+public void isperfect(int n) {
+	int sum=0;
+	for(int i=1;i<=n/2; i++)
+	{
+		if(n%i==0)
+		{
+			sum=sum+i;
+		}
+	}	
+	if(sum==n)
+	
+	System.out.println("is a perfectnumber");	
+	else
+		System.out.println("is not a perfectnumber" );
+	}
 
 public static void main(String[] args) {
 	Multiple m1= new Multiple();
    m1.ismultiple(6,3);
    m1.celsius(98);
    m1.farenheit(108);
+   m1.isperfect(30);  
+   
    System.out.println(m1.farenheit(108));
    System.out.println(m1.celsius(98));
 System.out.println(m1.ismultiple(2,6));
