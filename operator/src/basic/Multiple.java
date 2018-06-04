@@ -38,19 +38,33 @@ public void isperfect(int n) {
 	System.out.println("is a perfectnumber");	
 	else
 		System.out.println("is not a perfectnumber" );
-	}
+	}  
+public void reverse() {
+		int reversenumber=0,remainder,number=7631;
+		while(number !=0)
+		{
+			remainder=number%10;
+			reversenumber=remainder+(10*reversenumber);
+			number /=10;
+		
+		}
+		System.out.println("reversenumber"+reversenumber);
+	} 
 
 public static void main(String[] args) {
 	Multiple m1= new Multiple();
-   m1.ismultiple(6,3);
-   m1.celsius(98);
-   m1.farenheit(108);
-   m1.isperfect(30);  
+  // m1.ismultiple(6,3);
+   //m1.celsius(98);
+   //m1.farenheit(108);
+   //m1.isperfect(30); 
+  
    
-   System.out.println(m1.farenheit(108));
-   System.out.println(m1.celsius(98));
-System.out.println(m1.ismultiple(2,6));
+   //System.out.println(m1.farenheit(30.0));
+   ///System.out.println(m1.celsius(98));
+//System.out.println(m1.ismultiple(2,6));
 System.out.println(m1.iseven(3));
+m1.reverse();
+
 }
 
 
