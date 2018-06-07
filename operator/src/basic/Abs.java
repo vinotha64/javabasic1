@@ -1,7 +1,7 @@
 package basic;
 
-public  abstract class Abc {
-	public Abc() {
+public  abstract class Abs {
+	public Abs() {
 		
 	}
 
@@ -9,11 +9,11 @@ public  abstract class Abc {
 		
 	}
 	public static void main(String[] args){
-		//Abc abc=new abc();
-		Subabc sub=new Subabc();
+		//Abs abs=new abs();
+		Subabs sub=new Subabs();
 	}
 }
-class Subabc extends Abc{
+class Subabs extends Abs{
 
 	@Override
 	public void getitem() {
